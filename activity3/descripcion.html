@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.179">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>descripcion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="descripcion_files/libs/clipboard/clipboard.min.js"></script>
+<script src="descripcion_files/libs/quarto-html/quarto.js"></script>
+<script src="descripcion_files/libs/quarto-html/popper.min.js"></script>
+<script src="descripcion_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="descripcion_files/libs/quarto-html/anchor.min.js"></script>
+<link href="descripcion_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="descripcion_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="descripcion_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="descripcion_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="descripcion_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="actividad-3-construcción-de-un-modelo-para-clasificación-de-hojas-y-su-estado-de-salud" class="level1">
+<h1>Actividad 3: Construcción de un modelo para clasificación de hojas y su estado de salud</h1>
+<section id="contexto-del-problema" class="level2">
+<h2 class="anchored" data-anchor-id="contexto-del-problema">Contexto del problema</h2>
+<p>Las enfermedades presentes en los cultivos son una gran amenaza para la seguridad alimentaria, pero su rápida identificación sigue siendo difícil en muchas partes del mundo debido a la falta de infraestructura. El gran incremento en el uso de teléfonos inteligentes a nivel mundial y los avances recientes en visión computacional gracias al aprendizaje profundo han allanado el camino para el diagnóstico de enfermedades asistido por teléfonos inteligentes. En general, el enfoque basado el uso de aprendizaje profundo en conjuntos de datos de imágenes cada vez más grandes y disponibles públicamente representa un camino claro hacia el diagnóstico de enfermedades de cultivos asistido por teléfonos inteligentes a una escala global masiva.</p>
+</section>
+<section id="objetivo" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p>Tu objetivo en esta actividad será desarrollar un modelo basado en redes neuronales convolucionales para la identificación de plantas y su estado de salud a partir de imágenes de sus hojas. Para entrenar y validar el modelo, tienes a tu disposición un conjunto de datos públicos de 54,306 imágenes de hojas de plantas enfermas y sanas recolectadas en condiciones controladas. En el conjunto de datos identificarás 14 especies de cultivos y 26 enfermedades (o ausencia de las mismas). En la figura 1, puedes observar una muestra de las imágenes.</p>
+<p><img src="plantas.png" class="img-fluid"></p>
+<p>Durante el desarrollo de su actividad deberá tomar decisiones respecto a:</p>
+<ol type="a">
+<li><p>Topología de la red neuronal convolucional,</p></li>
+<li><p>Elección del tipo de imágenes. Por ejemplo:</p></li>
+</ol>
+<ul>
+<li>Imágenes a color</li>
+<li>Imágenes en escala de grises</li>
+<li>Imágenes segmentadas.</li>
+</ul>
+<p>Descargue el conjunto de datos de su elección: <a href="https://iteso01-my.sharepoint.com/:u:/g/personal/fcervantes_iteso_mx/EQus5dcaXSRNkr0Z2O2KLJkBSgDmmE9-DCJONSHT8gKM0Q?e=8UzwPQ">color.zip</a>, <a href="https://iteso01-my.sharepoint.com/:u:/g/personal/fcervantes_iteso_mx/ET1n6jirfSpJsXcnwwc6LJ0BIkzJpcTXvjOGBA66x52KRg?e=Us8pR6">grayscale.zip</a>, <a href="https://iteso01-my.sharepoint.com/:u:/g/personal/fcervantes_iteso_mx/Ed0LCLmQIp9AmTXf7q7lFyYB8blPdxVnJAl630tV6tJG5w?e=t1kMCe">segmented.zip</a></p>
+<ol start="3" type="a">
+<li>Elección del tamaño de los conjuntos de datos. Por ejemplo:</li>
+</ol>
+<ul>
+<li>Entrenamiento: 80%</li>
+<li>Validación: 20%</li>
+<li>Pruebas: 2%</li>
+</ul>
+<ol start="4" type="a">
+<li>Para el entrenamiento de su modelo, deberá elegir las funciones de costo, algoritmos de optimización, número de épocas y parámetros apropiados acorde al problema, los datos que tiene disponible, la capacidad de la infraestructura a la que tiene acceso, la arquitectura de la red convolucional y el tiempo que tiene disponible para entregar los resultados de su actividad.</li>
+</ol>
+<p>Nota: para esta actividad no es válido utilizar modelos preentrenados u otros conjuntos de datos provistos por Tensorflow.</p>
+<section id="descripción-del-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="descripción-del-dataset">Descripción del dataset</h3>
+<p>Al acceder al conjunto de datos encontrará la siguiente organización de archivos:</p>
+<p>|——- color: Imágenes en formato RGB, 256x256</p>
+<p>|——- grayscale: Imágenes en escala de grises, 256 x 256</p>
+<p>|——- segmented: Imágenes segmentadas , 256 x 256</p>
+<p>En cada carpeta, se encuentran organizadas las imágenes acorde a la clase a la que pertenecen y el estado de salud (esto se indica mediante el nombre de la carpeta). Veamos los siguientes ejemplos:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Nombre de la carpeta</th>
+<th>Tipo de hoja</th>
+<th>Estado de salud</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>apple___apple_scab</td>
+<td>apple</td>
+<td>not healthy</td>
+</tr>
+<tr class="even">
+<td>apple___healthy</td>
+<td>apple</td>
+<td>healthy</td>
+</tr>
+<tr class="odd">
+<td>blueberry___healthy</td>
+<td>blueberry</td>
+<td>healthy</td>
+</tr>
+<tr class="even">
+<td>Strawberry___Leaf_scorch</td>
+<td>Strawberry</td>
+<td>not healthy</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="productos-entregables" class="level3">
+<h3 class="anchored" data-anchor-id="productos-entregables">Productos entregables</h3>
+<ol type="1">
+<li><p>Código fuente</p></li>
+<li><p>Los 5 mejores modelos entrenados acorde a la evaluación de desempeño que realizaste.</p>
+<p>Código fuente Reporte técnico que incluya Datos de presentación Descripción de modelo base Descripción de estrategia utilizada para encontrar los 5 mejores modelos Descripción de sus 5 mejores modelos (arquitectura, configuración, etc.) Tabla comparativa de sus 5 mejores modelos Conclusiones</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
