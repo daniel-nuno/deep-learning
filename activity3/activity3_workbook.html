@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.179">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>activity3_workbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="activity3_workbook_files/libs/clipboard/clipboard.min.js"></script>
+<script src="activity3_workbook_files/libs/quarto-html/quarto.js"></script>
+<script src="activity3_workbook_files/libs/quarto-html/popper.min.js"></script>
+<script src="activity3_workbook_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="activity3_workbook_files/libs/quarto-html/anchor.min.js"></script>
+<link href="activity3_workbook_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="activity3_workbook_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="activity3_workbook_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="activity3_workbook_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="activity3_workbook_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<p><br> <br></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Western_Institute_of_Technology_and_Higher_Education_logo.png" class="img-fluid"></p>
+<p><strong>InstitutoTecnológico y de Estudios Superiores de Occidente</strong></p>
+<p><strong>Maestría Ciencia de Datos</strong></p>
+<p><strong>Aprendizaje Profundo</strong></p>
+<section id="actividad-3" class="level1">
+<h1>Actividad 3</h1>
+<p><br> <br></p>
+<hr>
+<p>Estudiante: Daniel Nuño <br> Profesor: Dr.&nbsp;Francisco Cervantes <br> Fecha entrega: February 12, 2023 <br></p>
+<hr>
+<p><br> <br></p>
+<div style="page-break-after: always;">
+
+</div>
+<section id="pre-análisis" class="level2">
+<h2 class="anchored" data-anchor-id="pre-análisis">Pre análisis</h2>
+<p>Creo que el uso de imágenes segmentas da una ligera ventaja ya que el fondo es negro, resalta la hoja, y la enfermedad. El primer paso es importar las imágenes:</p>
+<ul>
+<li>recesivamente importar las imágenes de la carpeta <em>segmented</em>.
+<ul>
+<li>primero intentar con escala de grises y después a color.</li>
+</ul></li>
+<li>cambiar el tamaño para que sea más manejable.
+<ul>
+<li>primero intentar con el tamaño original, después reduciendo el tamaño.</li>
+</ul></li>
+<li>rotar la matriz 90 grados 3 veces con la intención de generar 3 veces más datos.</li>
+<li>aplanarlos para tener una matriz de cuatro observaciones.</li>
+<li>usar el nombre de la carpeta para obtener las clasificaciones: tipo de hoja y estado de salud.</li>
+</ul>
+<p>La matriz X esperada es:</p>
+<ul>
+<li>56,304 x 4 = 225,216 filas</li>
+<li>dependiendo de la forma de importar de las imágenes X cantidad de columnas</li>
+</ul>
+<p>La matriz Y esperada es:</p>
+<ul>
+<li>misma cantidad de filas que X</li>
+<li>14 columnas por la especie más 26 columnas por enfermedades = 40 multiclase y multi clasificación.
+<ul>
+<li>38 siendo la combinación de ambas. Tratar el modelo así tiene ventaja de ser solo multiclase.</li>
+</ul></li>
+</ul>
+<p>Para la evolución de modelos será iterativo, modificando los hyperpárametros manualmente para entender cómo afectan el modelo. Pocos datos y pocas épocas para entrenar con el modelo cuando este decidido cual dirección pareciera ser el mejor.</p>
+</section>
+<section id="crear-conjunto-de-datos-a-partir-de-la-estructura-de-carpetas" class="level2">
+<h2 class="anchored" data-anchor-id="crear-conjunto-de-datos-a-partir-de-la-estructura-de-carpetas">Crear conjunto de datos a partir de la estructura de carpetas</h2>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>main_folder_path <span class="op">=</span> <span class="st">'C:/Users/nuno/Desktop/deep-learning-data/activity3/'</span> <span class="op">+</span> <span class="st">'segmented/'</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>metadata_img <span class="op">=</span> []</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>r_size <span class="op">=</span> <span class="dv">28</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.zeros((<span class="dv">54306</span><span class="op">*</span><span class="dv">4</span>, r_size, r_size, <span class="dv">3</span>)) <span class="co">#32*32*1 img size // 54306 * 4 rotations</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> dirpath, dirnames, filenames <span class="kw">in</span> os.walk(main_folder_path):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        dirs_paths_state <span class="op">=</span> [<span class="co">#os.path.join(dirpath, filename), #image full directory</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>                            <span class="bu">str</span>(os.path.basename(dirpath)).split(<span class="st">'___'</span>)[<span class="dv">0</span>], <span class="co">#fruit</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                            <span class="bu">str</span>(os.path.basename(dirpath)).split(<span class="st">'___'</span>)[<span class="dv">1</span>] <span class="co">#state</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                            ]</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        img <span class="op">=</span> Image.<span class="bu">open</span>(os.path.join(dirpath, filename)) <span class="co">#open image</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="co">#img = img.convert('L') #convert to greyscale</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> img.getbands() <span class="op">==</span> (<span class="st">'L'</span>,):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>            img <span class="op">=</span> img.convert(<span class="st">'RGB'</span>) <span class="co">#convert to rgb to keep 3 channels if read as greyscale</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        img <span class="op">=</span> img.resize((r_size, r_size)) <span class="co">#resize</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> times <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>):</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            metadata_img.append(dirs_paths_state) <span class="co">#Y array</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>            arr[times <span class="op">+</span> (counter<span class="op">*</span><span class="dv">4</span>)] <span class="op">=</span> np.array(img)<span class="op">/</span><span class="dv">255</span> <span class="co">#X array</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>            <span class="co">#arr[times + (counter*4)] = np.ravel(np.array(img)) #X array</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>            img <span class="op">=</span> img.rotate(angle<span class="op">=</span><span class="dv">90</span>) <span class="co">#rotate image to generate</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>img.close() <span class="co">#close connection</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> arr.astype(np.float16)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>metadata_img <span class="op">=</span> np.array(metadata_img, dtype<span class="op">=</span><span class="bu">str</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="crear-conjunto-de-entrenamiento-prueba-y-validación" class="level2">
+<h2 class="anchored" data-anchor-id="crear-conjunto-de-entrenamiento-prueba-y-validación">Crear conjunto de entrenamiento, prueba y validación</h2>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> OneHotEncoder</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Y <span class="op">=</span> np.char.add(metadata_img[:,<span class="dv">0</span>], metadata_img[:,<span class="dv">1</span>])</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>((<span class="bu">len</span>(Y), <span class="bu">len</span>(<span class="bu">set</span>(Y))))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>dummy_encoder_state <span class="op">=</span> OneHotEncoder(sparse<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>dummy_encoder_state.fit(Y.reshape(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Y <span class="op">=</span> dummy_encoder_state.transform(Y.reshape(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#one could use:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># or parse_categorical_crossentropy as loss and sparse_categorical_accuracy as metric</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#if do not one-hot encode your data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(217224, 38)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>X_train, X_test, Y_train, Y_test <span class="op">=</span> train_test_split(arr, Y, test_size<span class="op">=</span><span class="fl">0.9</span>, random_state<span class="op">=</span><span class="dv">27</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>(X_train.shape, Y_train.shape)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>((21722, 28, 28, 3), (21722, 38))</code></pre>
+</div>
+</div>
+</section>
+<section id="modelos-red-neuronal" class="level2">
+<h2 class="anchored" data-anchor-id="modelos-red-neuronal">Modelos red neuronal</h2>
+<p>Aunque el entrenamiento es el mismo para los diferentes modelos ajustando los hyperparametros, la red neuronal no es reproducible. Un buen modelo puede ser solo suerte.</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow <span class="im">import</span> keras</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> InputLayer, Conv2D, Flatten, Dense, Dropout</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="modelo-1" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-1">Modelo 1</h3>
+<div class="cell" data-execution_count="164">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>model1 <span class="op">=</span> keras.Sequential([</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    InputLayer(input_shape<span class="op">=</span>(<span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">3</span>)),</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    Conv2D(<span class="dv">1</span>, kernel_size<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">3</span>), strides<span class="op">=</span><span class="dv">1</span>, padding<span class="op">=</span><span class="st">'same'</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    Flatten(),</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"softmax"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>model1.summary()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Model: "sequential_18"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_18 (Conv2D)          (None, 28, 28, 1)         28        
+                                                                 
+ flatten_18 (Flatten)        (None, 784)               0         
+                                                                 
+ dense_49 (Dense)            (None, 38)                29830     
+                                                                 
+ dense_50 (Dense)            (None, 38)                1482      
+                                                                 
+=================================================================
+Total params: 31,340
+Trainable params: 31,340
+Non-trainable params: 0
+_________________________________________________________________</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="165">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>model1.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">"categorical_crossentropy"</span>, optimizer<span class="op">=</span><span class="st">"adam"</span>, metrics<span class="op">=</span>[<span class="st">"accuracy"</span>])</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>model1.fit(</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        X_train,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        Y_train,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        epochs<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch 1/2
+679/679 [==============================] - 30s 44ms/step - loss: 2.8927 - accuracy: 0.2225
+Epoch 2/2
+679/679 [==============================] - 32s 48ms/step - loss: 2.5552 - accuracy: 0.2771</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="165">
+<pre><code>&lt;keras.callbacks.History at 0x2a56479efb0&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="modelo-2" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-2">Modelo 2</h3>
+<p>Cambio drásticamente tamaño del filtro y kernel size.</p>
+<div class="cell" data-execution_count="166">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>model2 <span class="op">=</span> keras.Sequential([</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    InputLayer(input_shape<span class="op">=</span>(<span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">3</span>)),</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    Conv2D(<span class="dv">8</span>, kernel_size<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">6</span>), strides<span class="op">=</span><span class="dv">1</span>, padding<span class="op">=</span><span class="st">'same'</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    Flatten(),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"softmax"</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>model2.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">"categorical_crossentropy"</span>, optimizer<span class="op">=</span><span class="st">"adam"</span>, metrics<span class="op">=</span>[<span class="st">"accuracy"</span>])</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>model2.fit(</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        X_train,</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>        Y_train,</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>        epochs<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch 1/2
+679/679 [==============================] - 54s 80ms/step - loss: 2.4745 - accuracy: 0.3291
+Epoch 2/2
+679/679 [==============================] - 55s 80ms/step - loss: 1.8187 - accuracy: 0.4768</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="166">
+<pre><code>&lt;keras.callbacks.History at 0x2a563fe7370&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="167">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>model2.summary()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Model: "sequential_19"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_19 (Conv2D)          (None, 28, 28, 8)         872       
+                                                                 
+ flatten_19 (Flatten)        (None, 6272)              0         
+                                                                 
+ dense_51 (Dense)            (None, 38)                238374    
+                                                                 
+ dense_52 (Dense)            (None, 38)                1482      
+                                                                 
+=================================================================
+Total params: 240,728
+Trainable params: 240,728
+Non-trainable params: 0
+_________________________________________________________________</code></pre>
+</div>
+</div>
+<p>Se puede observar un cambio positivo en el accuracy. Aun se puede mejorar la primera capa oculta incrementando las neuronas hasta el tamaño de entrada previo (después de flatten).</p>
+</section>
+<section id="modelo-3" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-3">Modelo 3</h3>
+<p>Incrementa la primera capa oculta a 6272 neuronas.</p>
+<div class="cell" data-execution_count="168">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>model3 <span class="op">=</span> keras.Sequential([</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    InputLayer(input_shape<span class="op">=</span>(<span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">3</span>)),</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    Conv2D(<span class="dv">8</span>, kernel_size<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">6</span>), strides<span class="op">=</span><span class="dv">1</span>, padding<span class="op">=</span><span class="st">'same'</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    Flatten(),</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">6272</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"softmax"</span>)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>model3.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">"categorical_crossentropy"</span>, optimizer<span class="op">=</span><span class="st">"adam"</span>, metrics<span class="op">=</span>[<span class="st">"accuracy"</span>])</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>model3.fit(</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>        X_train,</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>        Y_train,</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>        epochs<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch 1/2
+679/679 [==============================] - 169s 249ms/step - loss: 1.9206 - accuracy: 0.4501
+Epoch 2/2
+679/679 [==============================] - 169s 249ms/step - loss: 1.0915 - accuracy: 0.6642</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="168">
+<pre><code>&lt;keras.callbacks.History at 0x2a563ceb1c0&gt;</code></pre>
+</div>
+</div>
+<p>El modelo mostro mejora pero fue mucho más lento.</p>
+</section>
+<section id="modelo-4" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-4">Modelo 4</h3>
+<p>Disminuye la cantidad de neuronas de la primera capa y aumenta la cantidad de capas ocultas.</p>
+<div class="cell" data-execution_count="182">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>model4 <span class="op">=</span> keras.Sequential([</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    InputLayer(input_shape<span class="op">=</span>(<span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">3</span>)),</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    Conv2D(<span class="dv">8</span>, kernel_size<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">6</span>), strides<span class="op">=</span><span class="dv">1</span>, padding<span class="op">=</span><span class="st">'same'</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    Flatten(),</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">1500</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">750</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">375</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"softmax"</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>model4.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">"categorical_crossentropy"</span>, optimizer<span class="op">=</span><span class="st">"adam"</span>, metrics<span class="op">=</span>[<span class="st">"accuracy"</span>])</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>model4.fit(</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>        X_train,</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>        Y_train,</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>        epochs<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch 1/2
+679/679 [==============================] - 66s 97ms/step - loss: 2.0437 - accuracy: 0.4123
+Epoch 2/2
+679/679 [==============================] - 66s 96ms/step - loss: 1.3098 - accuracy: 0.5996</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="182">
+<pre><code>&lt;keras.callbacks.History at 0x2a561177370&gt;</code></pre>
+</div>
+</div>
+<p>El modelo se desempeñó ligeramente peor disminuyendo las neuronas de la primera capa y aumentando las capas ocultas. Fue sin embargo ligeramente más rápido.</p>
+</section>
+<section id="modelo-5" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-5">Modelo 5</h3>
+<p>Para el último modelo cambiar las funciones de activación en la segunda capa por <em>sigmoid</em>.</p>
+<div class="cell" data-execution_count="170">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>model5 <span class="op">=</span> keras.Sequential([</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    InputLayer(input_shape<span class="op">=</span>(<span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">3</span>)),</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    Conv2D(<span class="dv">8</span>, kernel_size<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">6</span>), strides<span class="op">=</span><span class="dv">1</span>, padding<span class="op">=</span><span class="st">'same'</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    Flatten(),</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">1500</span>, activation<span class="op">=</span><span class="st">"sigmoid"</span>),</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">750</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">375</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"softmax"</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>model5.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">"categorical_crossentropy"</span>, optimizer<span class="op">=</span><span class="st">"adam"</span>, metrics<span class="op">=</span>[<span class="st">"accuracy"</span>])</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>model5.fit(</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>        X_train,</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>        Y_train,</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>        epochs<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch 1/2
+679/679 [==============================] - 67s 98ms/step - loss: 2.1945 - accuracy: 0.3718
+Epoch 2/2
+679/679 [==============================] - 68s 100ms/step - loss: 1.4598 - accuracy: 0.5523</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="170">
+<pre><code>&lt;keras.callbacks.History at 0x2a5541cfaf0&gt;</code></pre>
+</div>
+</div>
+<p>El modelo tiene un desempeño peor que el modelo 3 y 4 por 10% y 5%. Aunque el modelo 4 tiene peor desempeño que el modelo 3 es más rápido.</p>
+</section>
+<section id="modelo-6" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-6">Modelo 6</h3>
+<p>Usando como base el modelo 4, cambiar optimizador por <em>nadam</em> y <em>sdg</em>. (Nadam is Adam, but with Nesterov momentum instead of ordinary momentum. The advantage of using Nesterov momentum instead of regular momentum is the same as it is in the SGD case.)</p>
+<div class="cell" data-execution_count="174">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>model6 <span class="op">=</span> keras.Sequential([</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    InputLayer(input_shape<span class="op">=</span>(<span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">3</span>)),</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    Conv2D(<span class="dv">8</span>, kernel_size<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">6</span>), strides<span class="op">=</span><span class="dv">1</span>, padding<span class="op">=</span><span class="st">'same'</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    Flatten(),</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">1500</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">750</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">375</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"softmax"</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>model6.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">"categorical_crossentropy"</span>, optimizer<span class="op">=</span><span class="st">"nadam"</span>, metrics<span class="op">=</span>[<span class="st">"accuracy"</span>])</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>model6.fit(</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>        X_train,</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>        Y_train,</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>        epochs<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch 1/2
+679/679 [==============================] - 143s 209ms/step - loss: 2.0176 - accuracy: 0.4163
+Epoch 2/2
+679/679 [==============================] - 146s 215ms/step - loss: 1.2486 - accuracy: 0.6181</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="174">
+<pre><code>&lt;keras.callbacks.History at 0x2a550c409d0&gt;</code></pre>
+</div>
+</div>
+<p>Nadam el último modelo trabaja bien, pero es casi igual de lento que el modelo 3 pero peor desempeño. SDG es más rápido, pero considerablemente peor.</p>
+<section id="auc-de-los-modelos" class="level4">
+<h4 class="anchored" data-anchor-id="auc-de-los-modelos">AUC de los modelos</h4>
+<div class="cell" data-execution_count="178">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.metrics <span class="im">import</span> AUC</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model1.predict(X_train)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>auc_validatio1 <span class="op">=</span> AUC()</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>auc_validatio1.update_state(Y_train, y_pred)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>auc_validatio1.result().numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>679/679 [==============================] - 2s 3ms/step</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="178">
+<pre><code>0.8881164</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="179">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model2.predict(X_train)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>auc_validatio2 <span class="op">=</span> AUC()</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>auc_validatio2.update_state(Y_train, y_pred)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>auc_validatio2.result().numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>679/679 [==============================] - 25s 37ms/step</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="179">
+<pre><code>0.95536566</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="180">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model3.predict(X_train)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>auc_validatio3 <span class="op">=</span> AUC()</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>auc_validatio3.update_state(Y_train, y_pred)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>auc_validatio3.result().numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>679/679 [==============================] - 6s 8ms/step</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="180">
+<pre><code>0.9831232</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="183">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model4.predict(X_train)</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>auc_validatio4 <span class="op">=</span> AUC()</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>auc_validatio4.update_state(Y_train, y_pred)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>auc_validatio4.result().numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>679/679 [==============================] - 6s 8ms/step</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="183">
+<pre><code>0.98561656</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="184">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model5.predict(X_train)</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>auc_validatio5 <span class="op">=</span> AUC()</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>auc_validatio5.update_state(Y_train, y_pred)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>auc_validatio5.result().numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>679/679 [==============================] - 6s 8ms/step</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="184">
+<pre><code>0.9774611</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="185">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model6.predict(X_train)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>auc_validatio6 <span class="op">=</span> AUC()</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>auc_validatio6.update_state(Y_train, y_pred)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>auc_validatio6.result().numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>679/679 [==============================] - 6s 8ms/step</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="185">
+<pre><code>0.9700636</code></pre>
+</div>
+</div>
+<p>Los resultados indican que los modelos más confiables, respecto a la curva ROC, son el 3 y 4 por que son los valores más altos.</p>
+</section>
+</section>
+<section id="modelo-4-con-entrenamiento-completo." class="level3">
+<h3 class="anchored" data-anchor-id="modelo-4-con-entrenamiento-completo.">Modelo 4 con entrenamiento completo.</h3>
+<p>Utilizar el modelo 4 con 80% de los datos y aumentando las epocas a 6.</p>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>X_train, X_test, Y_train, Y_test <span class="op">=</span> train_test_split(arr, Y, test_size<span class="op">=</span><span class="fl">0.18</span>, random_state<span class="op">=</span><span class="dv">27</span>)</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>(X_train.shape, Y_train.shape)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>((178123, 28, 28, 3), (178123, 38))</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>model4 <span class="op">=</span> keras.Sequential([</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>    InputLayer(input_shape<span class="op">=</span>(<span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">3</span>)),</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>    Conv2D(<span class="dv">8</span>, kernel_size<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">6</span>), strides<span class="op">=</span><span class="dv">1</span>, padding<span class="op">=</span><span class="st">'same'</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>    Flatten(),</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">1500</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">750</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>    Dropout(rate<span class="op">=</span><span class="fl">0.01</span>),</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">375</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>    Dense(<span class="dv">38</span>, activation<span class="op">=</span><span class="st">"softmax"</span>)</span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>model4.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">"categorical_crossentropy"</span>, optimizer<span class="op">=</span><span class="st">"adam"</span>, metrics<span class="op">=</span>[<span class="st">"accuracy"</span>])</span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>model4.fit(</span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a>        X_train,</span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>        Y_train,</span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a>        epochs<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>test_loss, test_acc <span class="op">=</span> model4.evaluate(X_test, Y_test, verbose<span class="op">=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1222/1222 - 10s - loss: 0.8840 - accuracy: 0.7953 - 10s/epoch - 8ms/step</code></pre>
+</div>
+</div>
+<p>El accuracy final es de 80%.</p>
+</section>
+<section id="exportar-modelo" class="level3">
+<h3 class="anchored" data-anchor-id="exportar-modelo">Exportar modelo</h3>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>model4.save(<span class="st">'keras_model'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> keras.models.load_model(<span class="st">'keras_model'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="crear-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="crear-pipeline">Crear pipeline</h3>
+<p>Este pipeline asume que las imágenes nuevas no se conoce la clasificación a priori. - La imagen(es) vienen de una misma carpeta. - Las imágenes son segmentadas. - Se necesita Image de PIL, os, y array de numpy. - No sabes cuantas imágenes hay. - El tamaño de la imagen es convertida a 28x28x3. - El modelo ya está construido y con pesos para usar <em>predict</em>.</p>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>test_folder_path <span class="op">=</span> <span class="st">'C:/Users/nuno/Desktop/deep-learning-data/activity3/'</span> <span class="op">+</span> <span class="st">'test_pipeline/'</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>keys <span class="op">=</span> [<span class="st">'Apple___Apple_scab'</span>, <span class="st">'Apple___Black_rot'</span>,</span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Apple___Cedar_apple_rust'</span>, <span class="st">'Apple___healthy'</span>,</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Blueberry___healthy'</span>, <span class="st">'Cherry_(including_sour)___Powdery_mildew'</span>,</span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Cherry_(including_sour)___healthy'</span>,</span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot'</span>,</span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Corn_(maize)___Common_rust_'</span>,</span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Corn_(maize)___Northern_Leaf_Blight'</span>, <span class="st">'Corn_(maize)___healthy'</span>,</span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Grape___Black_rot'</span>, <span class="st">'Grape___Esca_(Black_Measles)'</span>,</span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)'</span>, <span class="st">'Grape___healthy'</span>,</span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Orange___Haunglongbing_(Citrus_greening)'</span>,</span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Peach___Bacterial_spot'</span>, <span class="st">'Peach___healthy'</span>,</span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Pepper,_bell___Bacterial_spot'</span>, <span class="st">'Pepper,_bell___healthy'</span>,</span>
+<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Potato___Early_blight'</span>, <span class="st">'Potato___Late_blight'</span>,</span>
+<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Potato___healthy'</span>, <span class="st">'Raspberry___healthy'</span>, <span class="st">'Soybean___healthy'</span>,</span>
+<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Squash___Powdery_mildew'</span>, <span class="st">'Strawberry___Leaf_scorch'</span>,</span>
+<span id="cb54-18"><a href="#cb54-18" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Strawberry___healthy'</span>, <span class="st">'Tomato___Bacterial_spot'</span>,</span>
+<span id="cb54-19"><a href="#cb54-19" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Tomato___Early_blight'</span>, <span class="st">'Tomato___Late_blight'</span>,</span>
+<span id="cb54-20"><a href="#cb54-20" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Tomato___Leaf_Mold'</span>, <span class="st">'Tomato___Septoria_leaf_spot'</span>,</span>
+<span id="cb54-21"><a href="#cb54-21" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Tomato___Spider_mites Two-spotted_spider_mite'</span>,</span>
+<span id="cb54-22"><a href="#cb54-22" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Tomato___Target_Spot'</span>, <span class="st">'Tomato___Tomato_Yellow_Leaf_Curl_Virus'</span>,</span>
+<span id="cb54-23"><a href="#cb54-23" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Tomato___Tomato_mosaic_virus'</span>, <span class="st">'Tomato___healthy'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="71">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pipeline_new_images(main_folder_path, model_to_predict, keys):</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> os</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>    results_array <span class="op">=</span> []</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>    class_list <span class="op">=</span> []</span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>    files_names_list <span class="op">=</span> []</span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>    r_size <span class="op">=</span> <span class="dv">28</span></span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> dirpath, dirnames, filenames <span class="kw">in</span> os.walk(main_folder_path):</span>
+<span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
+<span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a>            files_names_list.append(os.path.join(dirpath, filename))</span>
+<span id="cb55-14"><a href="#cb55-14" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb55-15"><a href="#cb55-15" aria-hidden="true" tabindex="-1"></a>            img <span class="op">=</span> Image.<span class="bu">open</span>(os.path.join(dirpath, filename)) <span class="co">#open image</span></span>
+<span id="cb55-16"><a href="#cb55-16" aria-hidden="true" tabindex="-1"></a>            <span class="co">#convert to rgb to keep 3 channels if read as greyscale</span></span>
+<span id="cb55-17"><a href="#cb55-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> img.getbands() <span class="op">==</span> (<span class="st">'L'</span>,):</span>
+<span id="cb55-18"><a href="#cb55-18" aria-hidden="true" tabindex="-1"></a>                img <span class="op">=</span> img.convert(<span class="st">'RGB'</span>)</span>
+<span id="cb55-19"><a href="#cb55-19" aria-hidden="true" tabindex="-1"></a>            img <span class="op">=</span> img.resize((r_size, r_size)) <span class="co">#resize</span></span>
+<span id="cb55-20"><a href="#cb55-20" aria-hidden="true" tabindex="-1"></a>            arr <span class="op">=</span> np.array(img)<span class="op">/</span><span class="dv">255</span></span>
+<span id="cb55-21"><a href="#cb55-21" aria-hidden="true" tabindex="-1"></a>            arr <span class="op">=</span> np.expand_dims(arr, axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb55-22"><a href="#cb55-22" aria-hidden="true" tabindex="-1"></a>            result_ <span class="op">=</span> model.predict(arr, verbose<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb55-23"><a href="#cb55-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-24"><a href="#cb55-24" aria-hidden="true" tabindex="-1"></a>            results_array.append(result_)</span>
+<span id="cb55-25"><a href="#cb55-25" aria-hidden="true" tabindex="-1"></a>            idx <span class="op">=</span> np.argmax(result_)</span>
+<span id="cb55-26"><a href="#cb55-26" aria-hidden="true" tabindex="-1"></a>            class_list.append(keys[idx])</span>
+<span id="cb55-27"><a href="#cb55-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-28"><a href="#cb55-28" aria-hidden="true" tabindex="-1"></a>    img.close() <span class="co">#close connection</span></span>
+<span id="cb55-29"><a href="#cb55-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-30"><a href="#cb55-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results_array, class_list, files_names_list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="72">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>r1, r2, r3 <span class="op">=</span> pipeline_new_images(test_folder_path, model, keys)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="conclusiones" class="level3">
+<h3 class="anchored" data-anchor-id="conclusiones">Conclusiones</h3>
+<p>En conclusión, el modelo parece sobre entrenado por que el accuracy en el entrenamiento es casi 15% mejor que la evaluación con la prueba. El uso correcto de la convolución es más importante que la fuerza bruta. Más parámetros (neuronas y capas ocultas) ayudó a mejor los resultados.</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
